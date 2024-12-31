@@ -1,0 +1,9 @@
+@use 'variables' as *;
+
+.logo {
+    font-family: $font-family;
+    color: $white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+}

@@ -1,0 +1,9 @@
+@use 'variables' as *;
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+    background-color: $darker-blue;
+}

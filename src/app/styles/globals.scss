@@ -1,0 +1,8 @@
+@use 'variables' as *;
+
+.app {
+    background-color: $darker-blue;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: auto;
+}
