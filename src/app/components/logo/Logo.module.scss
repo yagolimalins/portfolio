@@ -1,9 +1,11 @@
 @use 'variables' as *;
 
 .logo {
-    font-family: $font-family;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
     color: $white;
     text-decoration: none;
     font-size: 30px;
-    font-weight: 700;
 }

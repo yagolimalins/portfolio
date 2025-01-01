@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import 'styles/globals.scss'
 import styles from './Logo.module.scss'
 
 const Logo = () => {
