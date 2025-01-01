@@ -15,7 +15,7 @@
         font-family: $font-family;
         color: white;
 
-        
+
 
         .textual {
             display: flex;
@@ -35,6 +35,12 @@
             .description {
                 font-size: 20px;
             }
+
+            @media (max-width: 768px) {
+                .description {
+                    font-size: 18px;
+                }
+            }
         }
 
         .icons {
@@ -48,7 +54,7 @@
 
         @media (max-width: 768px) {
             .icons {
-                grid-template-columns: repeat(3, 1fr);  /* 2 items per row */
+                grid-template-columns: repeat(3, 1fr);
             }
         }
 
@@ -63,4 +69,3 @@
     }
 
 }
-
