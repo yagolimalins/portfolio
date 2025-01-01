@@ -1,19 +1,18 @@
+import Heading from 'components/heading/Heading'
 import Skill from '../skill/Skill'
 import styles from './Skills.module.scss'
+import Subheading from 'components/subheading/Subheading'
+import Headings from 'components/headings/Headings'
 
 const Skills = () => {
 
     return (
         <div className={styles.skills}>
             <div className={styles.content}>
-                <div className={styles.textual}>
-                    <h2 className={styles.title}>
-                        Tecnologias
-                    </h2>
-                    <p className={styles.description}>
-                        Linguagens, frameworks e ferramentas
-                    </p>
-                </div>
+                <Headings
+                    h2={'Tecnologias'}
+                    h3={'Linguagens, frameworks e ferramentas'}
+                />
                 <div className={styles.icons}>
                     <Skill skill={'JavaScript'} icon={'javascript'} />
                     <Skill skill={'TypeScript'} icon={'typescript'} />

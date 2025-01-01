@@ -1,0 +1,10 @@
+@use 'variables' as *;
+
+.heading {
+    color: $grey;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 12px;
+    padding: 4px 20px;
+    background-color: $darker-grey;
+}

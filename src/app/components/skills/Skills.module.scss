@@ -23,24 +23,6 @@
             align-items: center;
             justify-content: space-between;
             height: 72px;
-
-            .title {
-                font-size: 14px;
-                display: inline-block;
-                border-radius: 12px;
-                padding: 4px 20px;
-                background-color: $darker-grey;
-            }
-
-            .description {
-                font-size: 20px;
-            }
-
-            @media (max-width: 768px) {
-                .description {
-                    font-size: 18px;
-                }
-            }
         }
 
         .icons {

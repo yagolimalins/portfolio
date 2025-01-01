@@ -38,17 +38,6 @@
                 color: $grey;
                 line-height: 24px;
             }
-
-            .networks {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                max-width: 120px;
-
-                .network {
-                    padding: 0px 6px;
-                }
-            }
         }
 
         .photo {
