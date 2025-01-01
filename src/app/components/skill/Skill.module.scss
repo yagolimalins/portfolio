@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use 'globals' as *;
+
 .skill {
     display: flex;
     flex-direction: column;
