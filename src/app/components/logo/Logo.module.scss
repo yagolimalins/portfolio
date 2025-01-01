@@ -1,7 +1,7 @@
 @use 'variables' as *;
 
 .logo {
-    font-family: "Inter", serif;
+    font-family: $font-family;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;

@@ -7,11 +7,11 @@ const inter = Inter({ subsets: ['latin'] })
 
 const Home = () => {
     return (
-        <div className={inter.className}>
+        <main className={inter.className}>
             <Header />
             <Hero />
             <Skills />
-        </div>
+        </main>
     )
 }
 
