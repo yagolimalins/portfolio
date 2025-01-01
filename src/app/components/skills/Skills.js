@@ -11,7 +11,7 @@ const Skills = () => {
                         Tecnologias
                     </h2>
                     <p className={styles.description}>
-                        Linguagens, frameworks e ferramentas:
+                        Linguagens, frameworks e ferramentas
                     </p>
                 </div>
                 <div className={styles.icons}>
