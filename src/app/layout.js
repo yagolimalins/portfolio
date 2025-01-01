@@ -1,5 +1,6 @@
-import './styles/reset.scss';
-import './styles/globals.scss';
+import 'styles/reset.scss';
+import 'styles/globals.scss';
+import 'styles/variables.scss';
 
 export const metadata = {
   title: 'Next.js',
