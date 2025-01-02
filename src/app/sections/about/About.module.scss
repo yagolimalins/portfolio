@@ -7,18 +7,22 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 96px 64px;
+        padding: 96px 64px 96px 64px;
 
         .textual {
             display: flex;
             flex-direction: column;
             gap: 48px;
-            
+
             .bio {
                 display: flex;
-                gap: 120px;
+                gap: 80px;
 
                 .photo {
+                    flex-shrink: 0;
+                    flex-grow: 0;
+                    width: 400px;
+                    height: 550px;
                     margin-left: 16px;
                     border-left: 8px solid;
                     border-bottom: 8px solid;
@@ -26,8 +30,15 @@
                     filter: drop-shadow(-16px 16px 0px $darker-grey);
                 }
 
+                @media (max-width: 768px) {
+                    .photo {
+                        width: 280px;
+                        height: 385px;
+                    }
+                }
+
                 .depict {
-                    max-width: 700px;
+                    flex-grow: 1;
                     color: $grey;
                     font-size: 16px;
                     font-weight: 400px;
@@ -47,7 +58,7 @@
                 }
             }
 
-            @media (max-width: 1280px){
+            @media (max-width: 1280px) {
                 .bio {
                     gap: 48px;
                     flex-direction: column;
@@ -59,7 +70,7 @@
 
     @media (max-width: 768px) {
         .content {
-            padding: 64px 16px;
+            padding: 64px 32px 64px 32px;
         }
     }
 }
