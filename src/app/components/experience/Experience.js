@@ -23,7 +23,8 @@ const Experience = ({ logo, job, tasks, date }) => {
                         tasks.map((task) => {
                             return (
                                 <li
-                                    className={styles.task}>
+                                    className={styles.task}
+                                    key={task}>
                                     {task}
                                 </li>
                             )

@@ -3,22 +3,19 @@
 .navbar {
     display: flex;
     align-items: center;
+    gap: 20px;
 
     .link {
         font-family: $font-family;
         color: $white;
         font-weight: 400;
         text-decoration: none;
-        padding: 0px 10px;
-
     }
 
     .divider {
         color: #1F2937;
         font-family: $font-family;
         font-weight: 800;
-        margin-left: 14px;
-        margin-right: 24px;
     }
 
     .curriculo {
@@ -36,6 +33,12 @@
 
 @media (max-width: 768px) {
     .navbar {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .hamburger {
         display: none;
     }
 }
