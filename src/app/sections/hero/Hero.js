@@ -21,12 +21,11 @@ const Hero = () => {
                 <div>
                     <Image
                         className={styles.photo}
-                        src={'/profile.jpg'}
+                        src={'/images/profile.jpg'}
                         width={280}
                         height={280}
                         alt={'Foto de Yago'}
                     />
-                    <div className={styles.frame} />
                 </div>
             </div>
         </div>

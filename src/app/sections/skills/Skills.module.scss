@@ -2,10 +2,9 @@
 
 .skills {
     background-color: $darker-blue;
-    padding: 64px 0px 64px 0px;
 
     .content {
-
+        padding: 96px 0px 96px 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -14,8 +13,6 @@
 
         font-family: $font-family;
         color: white;
-
-
 
         .textual {
             display: flex;
@@ -46,7 +43,7 @@
         .content {
             display: flex;
             flex-direction: column;
-            height: 620px;
+            padding: 64px 0px;
         }
     }
 

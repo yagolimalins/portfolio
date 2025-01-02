@@ -2,11 +2,5 @@
 
 .subheading {
     color: $grey;
-    font-size: 20px;
-}
-
-@media (max-width: 768px) {
-    .subheading {
-        font-size: 18px;
-    }
+    font-size: 18px;
 }

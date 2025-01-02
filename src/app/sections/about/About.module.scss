@@ -2,5 +2,64 @@
 
 .about {
     background-color: $lighter-blue;
-    height: 500px;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 96px 64px;
+
+        .textual {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            
+            .bio {
+                display: flex;
+                gap: 120px;
+
+                .photo {
+                    margin-left: 16px;
+                    border-left: 8px solid;
+                    border-bottom: 8px solid;
+                    border-color: $lighter-blue;
+                    filter: drop-shadow(-16px 16px 0px $darker-grey);
+                }
+
+                .depict {
+                    max-width: 700px;
+                    color: $grey;
+                    font-size: 16px;
+                    font-weight: 400px;
+                    line-height: 24px;
+                }
+
+                @media (max-width: 1280px) {
+                    .depict {
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            @media (min-width: 2000px) {
+                .bio {
+                    gap: 4vw;
+                }
+            }
+
+            @media (max-width: 1280px){
+                .bio {
+                    gap: 48px;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .content {
+            padding: 64px 16px;
+        }
+    }
 }
