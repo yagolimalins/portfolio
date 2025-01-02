@@ -1,6 +1,6 @@
 import styles from './Header.module.scss'
-import Logo from '../logo/Logo'
-import Navbar from '../navbar/Navbar'
+import Logo from 'components/logo/Logo'
+import Navbar from 'components/navbar/Navbar'
 
 const Header = () => {
     return (

@@ -1,7 +1,5 @@
-import Heading from 'components/heading/Heading'
-import Skill from '../skill/Skill'
 import styles from './Skills.module.scss'
-import Subheading from 'components/subheading/Subheading'
+import Skill from 'components/skill/Skill'
 import Headings from 'components/headings/Headings'
 
 const Skills = () => {
