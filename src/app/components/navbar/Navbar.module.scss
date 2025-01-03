@@ -12,6 +12,11 @@
         text-decoration: none;
     }
 
+    .link:hover {
+        color: $darker-grey;
+        outline: $darker-grey;
+    }
+
     .divider {
         color: #1F2937;
         font-family: $font-family;

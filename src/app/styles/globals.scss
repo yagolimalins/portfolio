@@ -3,13 +3,6 @@
 .app {
     background-color: $darker-blue;
     max-width: 1280px;
-    padding: 0px 80px;
     min-height: 100vh;
     margin: auto;
-}
-
-@media (max-width: 1280px) {
-    .app {
-        padding: 0px 0px;
-    }
 }

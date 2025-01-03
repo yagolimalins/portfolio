@@ -45,9 +45,9 @@
                     line-height: 24px;
                 }
 
-                @media (max-width: 1280px) {
+                @media (max-width: 1000px) {
                     .depict {
-                        max-width: 100%;
+                        text-align: justify;
                     }
                 }
             }
@@ -68,9 +68,9 @@
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
         .content {
-            padding: 64px 64px 64px 64px;
+            padding: 64px 32px 64px 32px;
         }
     }
 }
