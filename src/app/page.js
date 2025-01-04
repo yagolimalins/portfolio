@@ -6,6 +6,7 @@ import About from 'sections/about/About'
 import Experiences from 'sections/experiences/Experiences'
 import Contact from 'sections/contact/Contact'
 import Footer from 'sections/footer/Footer'
+import Works from 'sections/works/Works'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +18,7 @@ const Home = () => {
             <About />
             <Skills />
             <Experiences />
+            <Works />
             <Contact />
             <Footer />
         </main>

@@ -1,0 +1,56 @@
+@use 'variables' as *;
+
+.work {
+    display: flex;
+    width: 100%;
+
+    .image {
+        padding: 48px 0px;
+        border-radius: 12px 0px 0px 12px;
+        width: 50%;
+        display: flex;
+        background-color: $card-light;
+
+        .page {
+            margin: auto;
+            width: 75%;
+            height: auto;
+            
+
+            border-radius: 12px;
+        }
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0px 12px 12px 0px;
+        width: 50%;
+        background-color: $card-dark;
+        padding: 48px;
+
+        .textual {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+
+            .title {
+                color: $white;
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+            .description {
+                color: $grey;
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            .tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+        }
+    }
+}
