@@ -14,7 +14,7 @@ const Works = () => {
                         description={
                             `
                             Pagina de apresentação do SENAI/AL e suas unidades. 
-                            Projeto realizado como desafio proposto para a vaga de estágio no Sistema FIEA.
+                            Projeto realizado como desafio proposto para a seleção de estágio no Sistema FIEA.
                             `
                         }
                         tags={[
