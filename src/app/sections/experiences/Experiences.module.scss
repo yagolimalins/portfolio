@@ -31,16 +31,16 @@
             }
         }
 
-        @media (max-width: 850px) {
-            .textual {
-                padding: 0px 64px;
-            }
-        }
+        
     }
 
     @media (max-width: 768px) {
         .content {
-            padding: 64px 0px;
+            padding: 64px 16px;
+
+            .textual {
+                padding: 0px 16px;
+            }
         }
     }
 

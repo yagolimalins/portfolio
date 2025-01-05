@@ -1,17 +1,18 @@
 import Image from 'next/image'
-import senai from 'assets/images/works/senai.png'
 import styles from './Work.module.scss'
 import Tag from 'components/tag/Tag'
 
-const Work = ({ title, description, tags }) => {
+const Work = ({ href, image, title, description, tags }) => {
     return (
         <div className={styles.work}>
             <div className={styles.image}>
-                <Image
-                    className={styles.page}
-                    src={senai}
-                    alt={`Foto do projeto ${title}`}
-                />
+                <a className={styles.link} href={href}>
+                    <Image
+                        className={styles.page}
+                        src={image}
+                        alt={`Foto do projeto ${title}`}
+                    />
+                </a>
             </div>
 
             <div className={styles.info}>
@@ -37,7 +38,7 @@ const Work = ({ title, description, tags }) => {
                             }
                         )}
                     </ul>
-                    
+
                 </div>
 
             </div>

@@ -1,15 +1,17 @@
 import Work from 'components/work/Work'
 import styles from './Works.module.scss'
 import Headings from 'components/headings/Headings'
+import senai from 'assets/images/works/senai.png'
 
 const Works = () => {
     return (
         <div className={styles.works}>
             <div className={styles.content}>
                 <div className={styles.textual}>
-                    <Headings h2={"Trabalhos"} h3={"Alguns projetos de minha autoria"}/>
+                    <Headings h2={"Trabalhos"} h3={"Alguns projetos de minha autoria"} />
                     <Work
-                        image={"senai"}
+                        href={"https://sobre-senai.vercel.app"}
+                        image={senai}
                         title={"Sobre o SENAI"}
                         description={
                             `

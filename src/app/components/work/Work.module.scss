@@ -5,19 +5,22 @@
     width: 100%;
 
     .image {
-        padding: 48px 0px;
+
         border-radius: 12px 0px 0px 12px;
         width: 50%;
-        display: flex;
         background-color: $card-light;
 
-        .page {
-            margin: auto;
-            width: 75%;
-            height: auto;
-            
+        .link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-            border-radius: 12px;
+            .page {
+                margin: 48px 0px;
+                width: 75%;
+                height: auto;
+                border-radius: 12px;
+            }
         }
     }
 
@@ -27,11 +30,12 @@
         border-radius: 0px 12px 12px 0px;
         width: 50%;
         background-color: $card-dark;
-        padding: 48px;
+        padding: 48px 0px;
 
         .textual {
             display: flex;
             flex-direction: column;
+            padding: 0px 48px;
             gap: 28px;
 
             .title {
@@ -51,6 +55,37 @@
                 flex-wrap: wrap;
                 gap: 8px;
             }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .work {
+        flex-direction: column;
+
+        .image {
+            width: 100%;
+            border-radius: 12px 12px 0px 0px;
+
+            .link {
+                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                .page {
+                    margin: 32px;
+                    height: 279px;
+                    width: auto;
+                }
+            }
+        }
+
+        .info {
+            padding: 32px 0px;
+            width: 100%;
+            border-radius: 0px 0px 12px 12px;
         }
     }
 }
