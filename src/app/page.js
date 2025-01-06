@@ -1,12 +1,13 @@
 import { Inter } from 'next/font/google'
 import Header from 'sections/header/Header'
 import Hero from 'sections/hero/Hero'
-import Skills from 'sections/skills/Skills'
 import About from 'sections/about/About'
+import Skills from 'sections/skills/Skills'
 import Experiences from 'sections/experiences/Experiences'
+import Works from 'sections/works/Works'
+import Testimonials from 'sections/testimonials/Testimonials'
 import Contact from 'sections/contact/Contact'
 import Footer from 'sections/footer/Footer'
-import Works from 'sections/works/Works'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +20,7 @@ const Home = () => {
             <Skills />
             <Experiences />
             <Works />
+            <Testimonials />
             <Contact />
             <Footer />
         </main>
