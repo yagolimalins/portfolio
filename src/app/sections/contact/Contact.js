@@ -45,11 +45,14 @@ const Contact = () => {
                             />
                         </div>
 
-                        <div className={styles.extra}>
-                            <p>Me encontre também nessas plataformas</p>
-                            <Networks/>
-                        </div>
+
                     </div>
+
+                    <div className={styles.extra}>
+                        <p>Me encontre também nessas plataformas</p>
+                        <Networks />
+                    </div>
+
                 </div>
             </div>
         </div>
