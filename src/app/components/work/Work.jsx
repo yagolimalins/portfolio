@@ -6,7 +6,7 @@ const Work = ({ href, image, title, description, tags }) => {
     return (
         <div className={styles.work}>
             <div className={styles.image}>
-                <a className={styles.link} href={href}>
+                <a className={styles.link} href={href} target={"_blank"}>
                     <Image
                         className={styles.page}
                         src={image}

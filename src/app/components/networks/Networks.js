@@ -5,7 +5,7 @@ import styles from './Networks.module.scss'
 const Networks = () => {
     return (
         <div className={styles.networks}>
-            <Link href={'https://github.com/yagolimalins'}>
+            <Link href={'https://github.com/yagolimalins'} target={"_blank"}>
                 <Image
                     src={'/icons/github.svg'}
                     width={32}
@@ -13,7 +13,7 @@ const Networks = () => {
                     alt={'Icone do Github'}
                 />
             </Link>
-            <Link href={'https://linkedin.com/in/yago-lima-lins'}>
+            <Link href={'https://linkedin.com/in/yago-lima-lins'} target={"_blank"}>
                 <Image
                     src={'/icons/linkedin.svg'}
                     width={38}
@@ -21,7 +21,7 @@ const Networks = () => {
                     alt={'Icone do Github'}
                 />
             </Link>
-            <Link href={'https://instagram.com/yagolimamusic'}>
+            <Link href={'https://instagram.com/yagolimamusic'} target={"_blank"}>
                 <Image
                     src={'/icons/instagram.svg'}
                     width={38}
