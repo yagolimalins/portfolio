@@ -6,6 +6,7 @@ const Experience = ({ logo, job, tasks, date }) => {
         <div className={styles.experience}>
 
             <Image
+                className={styles.logo}
                 src={`/logos/${logo}.svg`}
                 width={107}
                 height={40}
@@ -31,7 +32,7 @@ const Experience = ({ logo, job, tasks, date }) => {
                         })
                     }
                 </ul>
-                
+
             </div>
 
             <p className={styles.date}>

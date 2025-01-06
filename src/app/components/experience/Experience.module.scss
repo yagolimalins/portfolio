@@ -6,6 +6,11 @@
     border-radius: 12px;
     background-color: $card-dark;
     padding: 32px;
+    filter: drop-shadow(2px 2px 2px black);
+
+    .logo {
+        filter: drop-shadow(2px 2px 2px black);
+    }
 
     .description {
         color: $white;
