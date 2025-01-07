@@ -1,15 +1,102 @@
 @use 'variables' as *;
 
 .header {
+    background-color: $darker-blue;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 68px;
-    background-color: $darker-blue;
+
+    position: fixed;
+    max-width: 1280px;
+    width: 100%;
+    z-index: 10;
+    padding: 16px 0px;
+    border-bottom: 3px solid $lighter-blue;
+
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $darker-blue;
+        width: 100%;
+
+        .hamburger {
+            display: none;
+            padding-right: 12px;
+        }
+    }
+
+    .nav {
+        display: flex;
+        gap: 28px;
+        padding-right: 12px;
+
+        .links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+
+            .link {
+                color: $grey;
+                font-size: 16px;
+                font-weight: 500;
+                text-decoration: none;
+            }
+
+
+        }
+
+        .button {
+            font-family: $font-family;
+            color: $lighter-blue;
+            font-size: 16px;
+            font-weight: 500;
+            height: 36px;
+            width: 136px;
+            border-radius: 12px;
+            background-color: $white;
+        }
+    }
+
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 768px) {
     .header {
-        padding: 0px 16px 0px 16px;
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+
+        .top {
+            display: flex;
+            
+            .hamburger {
+                display: inline-block;
+            }
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+
+            .links {
+                padding: 32px 16px;
+                border-top: 3px solid $lighter-blue;
+                border-bottom: 3px solid $lighter-blue;
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .button {
+                align-self: center;
+                width: 95%;
+                padding: 0px 16px;
+            }
+        }
+
+        .active {
+            display: none;
+        }
     }
 }

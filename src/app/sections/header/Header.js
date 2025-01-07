@@ -1,12 +1,56 @@
-import styles from './Header.module.scss'
+'use client';
+
 import Logo from 'components/logo/Logo'
-import Navbar from 'components/navbar/Navbar'
+import styles from './Header.module.scss'
+import { useState } from 'react'
+import hamburger from 'assets/icons/hamburger.svg'
+import Image from 'next/image';
+import Link from 'next/link';
 
 const Header = () => {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
     return (
         <header className={styles.header}>
-            <Logo/>
-            <Navbar className={styles.navbar}/>
+            <div className={styles.top}>
+                <Logo className={styles.logo} />
+                <Image
+                    onClick={toggleMenu}
+                    className={styles.hamburger}
+                    width={32}
+                    height={32}
+                    src={hamburger}
+                    alt={"Hamburger menu"}
+                />
+            </div>
+
+
+            <nav className={`${styles.nav} ${!isOpen ? styles.active : ''}`}>
+
+                <ul className={styles.links}>
+                    <li>
+                        <Link className={styles.link} href={"/#"}>Sobre</Link>
+                    </li>
+                    <li>
+                        <Link className={styles.link} href={"/#"}>Trabalhos</Link>
+                    </li>
+                    <li>
+                        <Link className={styles.link} href={"/#"}>Depoimentos</Link>
+                    </li>
+                    <li>
+                        <Link className={styles.link} href={"/#"}>Contato</Link>
+                    </li>
+                </ul>
+                <button className={styles.button}>
+                    Baixar CV
+                </button>
+            </nav>
+
         </header>
     )
 }

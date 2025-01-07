@@ -3,13 +3,15 @@
 .hero {
     display: flex;
     background-color: $darker-blue;
+    position: relative;
+    top: 60px;
 
     .content {
         display: flex;
         justify-content: space-between;
         gap: 60px;
         padding: 96px 16px 96px 0px;
-        
+
 
         .textual {
             display: flex;
@@ -69,4 +71,10 @@
         }
     }
 
+}
+
+@media (max-width: 768px) {
+    .hero {
+        top: 110px;
+    }
 }
