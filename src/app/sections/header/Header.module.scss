@@ -10,15 +10,17 @@
     max-width: 1280px;
     width: 100%;
     z-index: 10;
-    padding: 16px 0px;
-    border-bottom: 3px solid $lighter-blue;
+    border-bottom: 2px solid $card-light;
 
     .top {
         display: flex;
         align-items: center;
         justify-content: space-between;
         background-color: $darker-blue;
+        height: 70px;
         width: 100%;
+        border-bottom: 2px solid $card-light;
+
 
         .hamburger {
             display: none;
@@ -63,8 +65,8 @@
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
-        gap: 16px;
         align-items: flex-start;
+        background-color: rgba($darker-blue, 0.98);
 
         .top {
             display: flex;
@@ -77,21 +79,27 @@
         .nav {
             display: flex;
             flex-direction: column;
+            gap: 0px;
             width: 100%;
-            height: 100vh;
+            padding-bottom: 18px;
 
             .links {
-                padding: 32px 16px;
-                border-top: 3px solid $lighter-blue;
-                border-bottom: 3px solid $lighter-blue;
-                align-items: flex-start;
+                padding: 32px 0px;
+                display: flex;
                 flex-direction: column;
+                gap: 32px;
+                align-items: center;
+
+                .link {
+                    font-size: 18px;
+                }
             }
 
             .button {
                 align-self: center;
-                width: 95%;
+                width: 40%;
                 padding: 0px 16px;
+                margin: 8px 0px;
             }
         }
 

@@ -5,7 +5,7 @@ import Networks from 'components/networks/Networks'
 
 const Contact = () => {
     return (
-        <div className={styles.contact}>
+        <div id="contacts" className={styles.contact}>
             <div className={styles.content}>
                 <div className={styles.textual}>
                     <Headings

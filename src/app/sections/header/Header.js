@@ -21,6 +21,7 @@ const Header = () => {
                 <Logo className={styles.logo} />
                 <Image
                     onClick={toggleMenu}
+                    onBlur={toggleMenu}
                     className={styles.hamburger}
                     width={32}
                     height={32}
@@ -34,16 +35,16 @@ const Header = () => {
 
                 <ul className={styles.links}>
                     <li>
-                        <Link className={styles.link} href={"/#"}>Sobre</Link>
+                        <Link onClick={toggleMenu} className={styles.link} href={"#about"}>Sobre</Link>
                     </li>
                     <li>
-                        <Link className={styles.link} href={"/#"}>Trabalhos</Link>
+                        <Link onClick={toggleMenu} className={styles.link} href={"#works"}>Trabalhos</Link>
                     </li>
                     <li>
-                        <Link className={styles.link} href={"/#"}>Depoimentos</Link>
+                        <Link onClick={toggleMenu} className={styles.link} href={"#testimonials"}>Depoimentos</Link>
                     </li>
                     <li>
-                        <Link className={styles.link} href={"/#"}>Contato</Link>
+                        <Link onClick={toggleMenu} className={styles.link} href={"#contacts"}>Contato</Link>
                     </li>
                 </ul>
                 <button className={styles.button}>

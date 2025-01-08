@@ -6,7 +6,7 @@ import yago from 'assets/avatars/yago.jpg'
 
 const Testimonials = () => {
     return (
-        <div className={styles.testimonials}>
+        <div id="testimonials" className={styles.testimonials}>
             <div className={styles.content}>
                 <div className={styles.textual}>
                     <Headings

@@ -5,7 +5,7 @@ import senai from 'assets/images/works/senai.png'
 
 const Works = () => {
     return (
-        <div className={styles.works}>
+        <div id="works" className={styles.works}>
             <div className={styles.content}>
                 <div className={styles.textual}>
                     <Headings h2={"Trabalhos"} h3={"Alguns projetos de minha autoria"} />

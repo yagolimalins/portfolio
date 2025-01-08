@@ -1,3 +1,4 @@
+import styles from './page.module.scss'
 import { Inter } from 'next/font/google'
 import Header from 'sections/header/Header'
 import Hero from 'sections/hero/Hero'
@@ -15,14 +16,16 @@ const Home = () => {
     return (
         <main className={inter.className}>
             <Header />
-            <Hero />
-            <About />
-            <Skills />
-            <Experiences />
-            <Works />
-            <Testimonials />
-            <Contact />
-            <Footer />
+            <div className={styles.content}>
+                <Hero />
+                <About />
+                <Skills />
+                <Experiences />
+                <Works />
+                <Testimonials />
+                <Contact />
+                <Footer />
+            </div>
         </main>
     )
 }

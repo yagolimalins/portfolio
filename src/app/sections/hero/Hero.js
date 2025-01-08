@@ -10,13 +10,14 @@ const Hero = () => {
                 <div className={styles.textual}>
                     <h1 className={styles.greeting}>Oi, sou Yago 👋</h1>
                     <p className={styles.intro}>
-                    Entusiasta de tecnologia, sistemas Linux e atualmente graduando em Análise e Desenvolvimento de Sistemas na Faculdade Estácio. Desde 2010, venho traçando meu caminho no mundo da tecnologia, adquirindo conhecimentos nas especialidades de Desenvolvimento Web e Infraestrutura em TI.
+                        Entusiasta de tecnologia, sistemas Linux e atualmente cursando Análise e Desenvolvimento de Sistemas na Faculdade Estácio.
+                        Desde 2010 venho traçando meu caminho no mundo da tecnologia, adquirindo conhecimentos nas especialidades de Desenvolvimento Web e Infraestrutura em TI.
                     </p>
                     <p className={styles.status}>
                         📍 Maceió, Alagoas. <br></br>
                         🟢 Disponível
                     </p>
-                    <Networks/>
+                    <Networks />
                 </div>
                 <div>
                     <Image
