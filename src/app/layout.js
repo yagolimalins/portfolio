@@ -1,4 +1,4 @@
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from '@vercel/analytics/next';
 
 import 'styles/reset.scss';
 import 'styles/variables.scss';
@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="pt-BR">
       <body className='app'>
         {children}
-        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   )
