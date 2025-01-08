@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
 import Image from 'next/image'
 import styles from './Contact.module.scss'
 import Headings from 'components/headings/Headings'
 import Networks from 'components/networks/Networks'
-import { Bounce, Flip, Slide, ToastContainer, Zoom, toast } from 'react-toastify';
+import { Slide, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
@@ -74,7 +74,7 @@ const Contact = () => {
             </div>
 
             <ToastContainer
-                position="bottom-right"
+                position="bottom-center"
                 autoClose={1000}
                 hideProgressBar={true}
                 newestOnTop
