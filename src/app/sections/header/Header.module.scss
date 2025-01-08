@@ -19,8 +19,6 @@
         background-color: $darker-blue;
         height: 70px;
         width: 100%;
-        border-bottom: 2px solid $card-light;
-
 
         .hamburger {
             display: none;
@@ -48,15 +46,17 @@
 
         }
 
-        .button {
-            font-family: $font-family;
-            color: $lighter-blue;
-            font-size: 16px;
-            font-weight: 500;
-            height: 36px;
-            width: 136px;
-            border-radius: 12px;
-            background-color: $white;
+        .curriculum {
+            .button {
+                font-family: $font-family;
+                color: $lighter-blue;
+                font-size: 16px;
+                font-weight: 500;
+                height: 36px;
+                width: 136px;
+                border-radius: 12px;
+                background-color: $white;
+            }
         }
     }
 
@@ -70,7 +70,8 @@
 
         .top {
             display: flex;
-            
+            border-bottom: 2px solid $card-light;
+
             .hamburger {
                 display: inline-block;
             }
@@ -95,11 +96,14 @@
                 }
             }
 
-            .button {
+            .curriculum {
+                text-decoration: none;
+                display: flex;
+                justify-content: space-around;
                 align-self: center;
                 width: 40%;
                 padding: 0px 16px;
-                margin: 8px 0px;
+                margin-bottom: 8px;
             }
         }
 

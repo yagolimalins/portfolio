@@ -17,7 +17,7 @@ const Experiences = () => {
                         tasks={[
                             'Instalação de softwares',
                             'Implantação e manutenção de hardware',
-                            'Gerenciamento de Identidade e Acesso (IAM)',
+                            'Gerenciamento de Identidade e Acesso',
                             'Automação de tarefas através de scripts',
                             'Suporte em Service Desk'
                         ]}

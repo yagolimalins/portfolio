@@ -1,9 +1,23 @@
+"use client";
+
 import Image from 'next/image'
 import styles from './Contact.module.scss'
 import Headings from 'components/headings/Headings'
 import Networks from 'components/networks/Networks'
+import { Bounce, Flip, Slide, ToastContainer, Zoom, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
+
+    const handleCopy = async (contact, type) => {
+        try {
+            await toast.success(`${type} copiado!`)
+            await navigator.clipboard.writeText(contact);
+        } catch (err) {
+            console.log(err)
+        }
+    }
+
     return (
         <div id="contacts" className={styles.contact}>
             <div className={styles.content}>
@@ -22,6 +36,9 @@ const Contact = () => {
                             />
                             <p>yago.lima.lins@protonmail.com</p>
                             <Image
+                                onClick={() => {
+                                    handleCopy("yago.lima.lins@protonmail.com", "Email")
+                                }}
                                 src={'/icons/copy.png'}
                                 width={32}
                                 height={32}
@@ -38,15 +55,15 @@ const Contact = () => {
                             />
                             <p>+55 82 996052839</p>
                             <Image
+                                onClick={() => { handleCopy("+5582996052839", "Celular") }}
                                 src={'/icons/copy.png'}
                                 width={32}
                                 height={32}
                                 alt={'Icone de copiar'}
                             />
                         </div>
-
-
                     </div>
+
 
                     <div className={styles.extra}>
                         <p>Me encontre também nessas plataformas</p>
@@ -55,6 +72,22 @@ const Contact = () => {
 
                 </div>
             </div>
+
+            <ToastContainer
+                position="bottom-right"
+                autoClose={1000}
+                hideProgressBar={true}
+                newestOnTop
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+                draggablePercent={25}
+                transition={Slide}
+            />
+
         </div>
     )
 }
