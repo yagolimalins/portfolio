@@ -11,7 +11,7 @@ const Testimonials = () => {
                 <div className={styles.textual}>
                     <Headings
                         h2={"Depoimentos"}
-                        h3={"Gentis comentários de meus clientes"}
+                        h3={"Gentis comentários de parceiros"}
                     />
                     <div className={styles.testimonials}>
                         <Testimonial

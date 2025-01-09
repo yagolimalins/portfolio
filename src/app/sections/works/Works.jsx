@@ -8,7 +8,7 @@ const Works = () => {
         <div id="works" className={styles.works}>
             <div className={styles.content}>
                 <div className={styles.textual}>
-                    <Headings h2={"Trabalhos"} h3={"Alguns projetos de minha autoria"} />
+                    <Headings h2={"Trabalhos"} h3={"Alguns projetos em que trabalhei"} />
                     <Work
                         href={"https://sobre-senai.vercel.app"}
                         image={senai}

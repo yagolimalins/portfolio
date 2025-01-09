@@ -9,7 +9,7 @@ const Experiences = () => {
                 <div className={styles.textual}>
                     <Headings
                         h2={'Experiências'}
-                        h3={'Um pouco das minhas experiências mais recentes'}
+                        h3={'Minhas experiências mais recentes'}
                     />
                     <Experience
                         logo={'fiea'}

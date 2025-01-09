@@ -24,7 +24,7 @@ const Contact = () => {
                 <div className={styles.textual}>
                     <Headings
                         h2={'Contato'}
-                        h3={'Vamos conversar sobre o seu projeto?'}
+                        h3={'Vamos criar algo incrível juntos?'}
                     />
                     <div className={styles.info}>
                         <div className={styles.address}>
