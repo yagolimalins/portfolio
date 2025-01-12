@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from './Hero.module.scss'
-import Link from 'next/link'
 import Networks from 'components/networks/Networks'
+import yago from 'assets/images/photos/profile.webp'
 
 const Hero = () => {
     return (
@@ -22,7 +22,7 @@ const Hero = () => {
                 <div>
                     <Image
                         className={styles.photo}
-                        src={'/images/profile.jpg'}
+                        src={yago}
                         width={280}
                         height={280}
                         alt={'Foto de Yago'}
