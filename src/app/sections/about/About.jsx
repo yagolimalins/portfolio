@@ -18,9 +18,9 @@ const About = () => {
                         <div className={styles.depict}>
                             <p>
                                 Graduando em Análise e Desenvolvimento de Sistemas na faculdade Estácio com mais de uma década de envolvimento no universo da tecnologia.
-                                Atualmente, sou estagiário como Analista de Infraestrutura no Sistema FIEA e trabalho como desenvolvedor web freelancer, sempre buscando aprimorar minhas habilidades e oferecer soluções de qualidade.
+                                Atualmente, atuo como Desenvolvedor de Software no Sistema FIEA e trabalho também como desenvolvedor web freelancer, sempre buscando aprimorar minhas habilidades e oferecer soluções de qualidade.
                                 <br /><br />
-                                Tenho experiência com diversas tecnologias, incluindo React + Next.js e Vue + Nuxt.js no front-end, e Express e Spring Boot no back-end.
+                                Tenho experiência com diversas tecnologias, incluindo React + Next.js e Vue + Nuxt.js no front-end e no lado do back-end: Express (Node.js) e outros frameworks do ecossistema Deno (Hono, Oak, etc).
                                 No lado da persistência de dados, faço uso de bancos de dados relacionais como PostgreSQL e não relacionais como MongoDB, buscando sempre a melhor performance e integridade nas minhas aplicações.
                                 <br /><br />
                                 Além de minha trajetória na tecnologia, sou músico e já atuei como professor na área. Essa vivência me proporcionou uma visão criativa e analítica além de competências comunicativas e interpessoais, que levo para todos os projetos em que me envolvo.
