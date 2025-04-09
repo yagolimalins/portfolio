@@ -13,7 +13,7 @@ const Experiences = () => {
                     />
                     <Experience
                         logo={'fiea'}
-                        job={'Analista de Infraestrutura (Estágio)'}
+                        job={'Analista de Infraestrutura'}
                         tasks={[
                             'Instalação de softwares',
                             'Implantação e manutenção de hardware',
@@ -21,7 +21,21 @@ const Experiences = () => {
                             'Automação de tarefas através de scripts',
                             'Suporte em Service Desk'
                         ]}
-                        date={'2024 - Atualmente'}
+                        date={'2024 - 2025'}
+                    />
+                    <Experience
+                        logo={'fiea'}
+                        job={'Desenvolvedor de Software'}
+                        tasks={[
+                            "Suporte N2 em sistema BPMS (Orquestra)",
+                            "Desenvolver novas funcionalidades",
+                            "Integração entre sistemas usando APIs",
+                            "Correção de bugs em processos",
+                            "Atualização de fontes de dados",
+                            "Ajustes no fluxo de processos",
+                            "Frameworks Kanban e Scrum"
+                        ]}
+                        date={'2025 - Atual'}
                     />
                 </div>
             </div>
