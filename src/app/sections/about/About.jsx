@@ -17,7 +17,7 @@ const About = () => {
                         />
                         <div className={styles.depict}>
                             <p>
-                                Graduando em Análise e Desenvolvimento de Sistemas na faculdade Estácio com mais de uma década de envolvimento no universo da tecnologia.
+                                Analista de sistemas e engenheiro de software em formação com mais de uma década de envolvimento no universo da tecnologia.
                                 Atualmente, atuo como Desenvolvedor de Software no Sistema FIEA e trabalho também como desenvolvedor web freelancer, sempre buscando aprimorar minhas habilidades e oferecer soluções de qualidade.
                                 <br /><br />
                                 Tenho experiência com diversas tecnologias, incluindo React + Next.js e Vue + Nuxt.js no front-end e no lado do back-end: Express (Node.js) e outros frameworks do ecossistema Deno (Hono, Oak, etc).
