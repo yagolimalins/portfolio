@@ -6,7 +6,7 @@ const Testimonial = ({ avatar, testimonial, author, website, position }) => {
     return (
         <div className={styles.card}>
             <div className={styles.content}>
-                <a href={website}>
+                <a href={website} target='_blank'>
                     <Image
                         className={styles.avatar}
                         src={avatar}
@@ -19,13 +19,12 @@ const Testimonial = ({ avatar, testimonial, author, website, position }) => {
                         {`"${testimonial}"`}
                     </p>
                     <p className={styles.author}>
-                        <a href={website} className={styles.website}>
+                        <a href={website} className={styles.website} target='_blank'>
                             <Image
                             className={styles.linkedin}
                             src={linkedin}
                             alt='Icone do LinkedIn'
                             />
-                            
                             {author}
                         </a>
                     </p>
