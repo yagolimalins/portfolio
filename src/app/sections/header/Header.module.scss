@@ -7,7 +7,7 @@
     justify-content: space-between;
 
     position: fixed;
-    max-width: 1280px;
+    max-width: 1400px;
     width: 100%;
     z-index: 10;
     border-bottom: 2px solid $card-light;
@@ -28,13 +28,13 @@
 
     .nav {
         display: flex;
-        gap: 28px;
+        gap: 34px;
         padding-right: 12px;
 
         .links {
             display: flex;
             align-items: center;
-            gap: 28px;
+            gap: 34px;
 
             .link {
                 color: $grey;
@@ -56,6 +56,7 @@
                 width: 136px;
                 border-radius: 12px;
                 background-color: $white;
+                cursor: pointer;
             }
         }
     }

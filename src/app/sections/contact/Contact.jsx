@@ -36,6 +36,7 @@ const Contact = () => {
                             />
                             <p>yago.lima.lins@protonmail.com</p>
                             <Image
+                                className={styles.copy}
                                 onClick={() => {
                                     handleCopy("yago.lima.lins@protonmail.com", "Email")
                                 }}
@@ -55,6 +56,7 @@ const Contact = () => {
                             />
                             <p>+55 82 996052839</p>
                             <Image
+                                className={styles.copy}
                                 onClick={() => { handleCopy("+5582996052839", "Celular") }}
                                 src={'/icons/copy.png'}
                                 width={32}
