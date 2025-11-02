@@ -11,7 +11,7 @@ const Contact = () => {
 
     const handleCopy = async (contact, type) => {
         try {
-            await toast.success(`${type} copiado!`)
+            await toast.success(`${type} copied!`)
             await navigator.clipboard.writeText(contact);
         } catch (err) {
             console.log(err)
@@ -57,7 +57,7 @@ const Contact = () => {
                             <p>+55 82 996052839</p>
                             <Image
                                 className={styles.copy}
-                                onClick={() => { handleCopy("+5582996052839", "Celular") }}
+                                onClick={() => { handleCopy("+5582996052839", "Mobile") }}
                                 src={'/icons/copy.png'}
                                 width={32}
                                 height={32}
