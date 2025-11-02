@@ -18,19 +18,19 @@ const Testimonial = ({ avatar, testimonial, author, website, position }) => {
                     <p className={styles.testimonial}>
                         {`"${testimonial}"`}
                     </p>
-                    <p className={styles.author}>
+                    <div className={styles.author}>
                         <a href={website} className={styles.website} target='_blank'>
-                            <Image
+                            {/* <Image
                             className={styles.linkedin}
                             src={linkedin}
                             alt='Icone do LinkedIn'
-                            />
+                            /> */}
                             {author}
                         </a>
-                    </p>
-                    <p className={styles.position}>
-                        {position}
-                    </p>
+                        <p className={styles.position}>
+                            {position}
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

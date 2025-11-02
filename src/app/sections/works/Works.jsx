@@ -9,15 +9,14 @@ const Works = () => {
         <div id="works" className={styles.works}>
             <div className={styles.content}>
                 <div className={styles.textual}>
-                    <Headings h2={"Trabalhos"} h3={"Alguns projetos em que trabalhei"} />
+                    <Headings h2={"Works"} h3={"Some projects I’ve worked on"} />
                     <Work
                         href={"https://www.hidrauteky.com"}
                         image={hidrauteky}
                         title={"Hidrauteky"}
                         description={
-                            `Site empresarial desenvolvido com tecnologias modernas para um negócio local de detecção de vazamentos. 
-                            No desenvolvimento desse projeto utilizei Next.js visando performance e escalabilidade, permitindo também
-                            a implementação de um backend integrado para envios de Email para a empresa.
+                            `A modern business website built for a local leak detection company, designed to deliver speed, scalability, and a seamless user experience.
+                            Developed with Next.js, the project features an integrated backend that streamlines email communication, ensuring efficient customer interactions and smooth business operations.
                             `
                         }
                         tags={[
@@ -31,11 +30,11 @@ const Works = () => {
                     <Work
                         href={"https://sobre-senai.vercel.app"}
                         image={senai}
-                        title={"Sobre o SENAI"}
+                        title={"About SENAI"}
                         description={
                             `
-                            Pagina de apresentação do SENAI/AL e suas unidades. 
-                            Projeto realizado como desafio proposto para a seleção de estágio no Sistema FIEA.
+                            Presentation page for SENAI/AL and its local units, developed as part of a challenge for the internship selection process at FIEA.
+                            This project focused on creating a clean, responsive, and informative web experience that highlights the institution’s structure and impact while showcasing both technical skill and attention to design detail.
                             `
                         }
                         tags={[

@@ -23,8 +23,8 @@ const Contact = () => {
             <div className={styles.content}>
                 <div className={styles.textual}>
                     <Headings
-                        h2={'Contato'}
-                        h3={'Vamos criar algo incrível juntos?'}
+                        h2={'Contact'}
+                        h3={'Let’s create something amazing together! 🚀'}
                     />
                     <div className={styles.info}>
                         <div className={styles.address}>
@@ -68,7 +68,7 @@ const Contact = () => {
 
 
                     <div className={styles.extra}>
-                        <p>Me encontre também nessas plataformas</p>
+                        <p>You can also find me on these platforms</p>
                         <Networks />
                     </div>
 

@@ -8,34 +8,35 @@ const Experiences = () => {
             <div className={styles.content}>
                 <div className={styles.textual}>
                     <Headings
-                        h2={'Experiências'}
-                        h3={'Minhas experiências mais recentes'}
+                        h2={'Experience'}
+                        h3={'My most recent experiences'}
                     />
                     <Experience
                         logo={'fiea'}
-                        job={'Analista de Infraestrutura'}
+                        job={'Software Developer'}
                         tasks={[
-                            'Instalação de softwares',
-                            'Implantação e manutenção de hardware',
-                            'Gerenciamento de Identidade e Acesso',
-                            'Automação de tarefas através de scripts',
-                            'Suporte em Service Desk'
+                            'Level 2 support for the Orquestra/Zeev BPMS system',
+                            'Develop new features using JavaScript/TypeScript + jQuery',
+                            'Integrate systems using Node.js and Python APIs',
+                            'Update data sources consuming GraphQL and REST APIs',
+                            'SQL Server database management',
+                            'Fix bugs and improve business processes',
+                            'Deliver solutions using Docker and Jenkins',
+                            'Work under the Scrum framework using Kanban + Azure DevOps'
+                        ]}
+                        date={'2025 - Present'}
+                    />
+                    <Experience
+                        logo={'fiea'}
+                        job={'Infrastructure Analyst'}
+                        tasks={[
+                            'Software installation, hardware deployment and maintenance',
+                            'Identity and Access Management using Active Directory and Microsoft 365',
+                            'Task automation through PowerShell scripting',
+                            'IT inventory management using TraumaZero',
+                            'Level 2 Service Desk support'
                         ]}
                         date={'2024 - 2025'}
-                    />
-                    <Experience
-                        logo={'fiea'}
-                        job={'Desenvolvedor de Software'}
-                        tasks={[
-                            "Suporte N2 em sistema BPMS (Orquestra)",
-                            "Desenvolver novas funcionalidades",
-                            "Integração entre sistemas usando APIs",
-                            "Correção de bugs em processos",
-                            "Atualização de fontes de dados",
-                            "Ajustes no fluxo de processos",
-                            "Frameworks Kanban e Scrum"
-                        ]}
-                        date={'2025 - Atual'}
                     />
                 </div>
             </div>

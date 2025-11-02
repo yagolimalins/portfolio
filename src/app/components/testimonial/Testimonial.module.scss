@@ -3,53 +3,73 @@
 .card {
     background-color: $card-dark;
     border-radius: 12px;
-    height: 560px;
+    min-height: 450px;
     width: 373px;
     filter: drop-shadow(2px 2px 2px black);
+    display: flex;
+    /* allow content to stretch within */
+    flex-direction: column;
 
     .content {
+        flex: 1;
+        /* make content fill the available space */
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
+        /* distribute elements evenly */
         padding: 48px 32px;
         gap: 24px;
+        box-sizing: border-box;
+        /* include padding in height calculation */
+        overflow: hidden;
+        /* prevent content from overflowing */
+    }
 
-        .avatar {
-            border-radius: 200px;
-            width: 64px;
-            height: auto;
-            filter: drop-shadow(2px 2px 2px black);
+    .avatar {
+        border-radius: 200px;
+        width: 64px;
+        height: auto;
+        filter: drop-shadow(2px 2px 2px black);
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        flex: 1;
+        /* helps text take available space */
+        // justify-content: space-between;
+        /* vertically center content if needed */
+
+        .testimonial {
+            color: $grey;
+            line-height: 24px;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
-        .text {
+        .author {
             display: flex;
             flex-direction: column;
-            gap: 24px;
+            gap: 8px;
+            align-self: center;
+            color: $white;
+            font-size: 20px;
+            font-weight: 600;
+            filter: drop-shadow(2px 2px 2px black);
 
-            .testimonial {
-                color: $grey;
-                line-height: 24px;
-                text-align: center;
-            }
-
-            .author {
-                align-self: center;
+            .website {
+                display: flex;
+                align-items: center;
+                gap: 4px;
                 color: $white;
-                font-size: 20px;
-                font-weight: 600;
-                filter: drop-shadow(2px 2px 2px black);
+                text-decoration: none;
 
-                .website {
-                    display: flex;
-                    align-items: center;
-                    gap: 4px;
-                    color: $white;
-                    text-decoration: none;
-
-                    .linkedin {
-                        width: 32px;
-                        height: auto;
-                    }
+                .linkedin {
+                    width: 32px;
+                    height: auto;
                 }
             }
 
@@ -59,14 +79,17 @@
                 font-size: 14px;
                 font-weight: 400;
             }
-
         }
+
+
     }
 }
 
 @media (max-width: 768px) {
     .card {
-        width: 373px;
+        width: 100%;
+        /* make it more responsive */
+        height: auto;
+        /* allow height to adjust on small screens */
     }
-
 }

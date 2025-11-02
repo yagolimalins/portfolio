@@ -35,21 +35,21 @@ const Header = () => {
 
                 <ul className={styles.links}>
                     <li>
-                        <Link onClick={toggleMenu} className={styles.link} href={"#about"}>Sobre</Link>
+                        <Link onClick={toggleMenu} className={styles.link} href={"#about"}>About</Link>
                     </li>
                     <li>
-                        <Link onClick={toggleMenu} className={styles.link} href={"#works"}>Trabalhos</Link>
+                        <Link onClick={toggleMenu} className={styles.link} href={"#works"}>Works</Link>
                     </li>
                     <li>
-                        <Link onClick={toggleMenu} className={styles.link} href={"#testimonials"}>Depoimentos</Link>
+                        <Link onClick={toggleMenu} className={styles.link} href={"#testimonials"}>Testimonials</Link>
                     </li>
                     <li>
-                        <Link onClick={toggleMenu} className={styles.link} href={"#contacts"}>Contato</Link>
+                        <Link onClick={toggleMenu} className={styles.link} href={"#contacts"}>Contact</Link>
                     </li>
                 </ul>
                 <a className={styles.curriculum} onClick={toggleMenu} href='documents/Yago Lima Lins - Desenvolvedor Full-Stack.pdf' target='_blank'>
                     <button className={styles.button}>
-                        Baixar CV
+                        Download CV
                     </button>
                 </a>
             </nav>

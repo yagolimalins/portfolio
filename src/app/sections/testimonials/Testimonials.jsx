@@ -3,6 +3,8 @@ import styles from './Testimonials.module.scss'
 import Testimonial from 'components/testimonial/Testimonial'
 import edgar from 'assets/avatars/edgar.jpg'
 import leonardo from 'assets/avatars/leonardo.jpg'
+import joao from 'assets/avatars/joao.jpg'
+
 
 const Testimonials = () => {
     return (
@@ -19,22 +21,31 @@ const Testimonials = () => {
                             author={"Edgar Azevedo"}
                             website={"https://www.linkedin.com/in/edgar-azevedo-dos-santos-filho-140a2b128"}
                             testimonial={
-                                `A ferramenta de georreferenciamento criada por Yago foi um divisor de águas para a equipe. 
-                                Com ela, é possível acessar localizações em um piscar de olhos, planejar visitas de forma estratégica e monitorar unidades de longe. 
-                                Isso não apenas melhorou a produtividade, mas também tornou o trabalho muito mais eficiente e prático.`
+                                `The georeferencing tool created by Yago was a real game-changer for our team. 
+                                With it, we can access locations in the blink of an eye, plan visits strategically, and monitor units remotely. 
+                                This not only improved productivity but also made our work much more efficient and practical.`
                             }
-                            position={'Coordenador - CIGIP'}
+                            position={'Coordinator - CIGIP'}
                         />
                         <Testimonial
                             avatar={leonardo}
                             author={"Dr. Leonardo Medeiros"}
                             website={"https://www.linkedin.com/in/leonardo-medeiros-dr-6088443"}
                             testimonial={
-                                `Yago é um profissional objetivo com habilidades diversas e pode contribuir para seus projetos como Músico ou Engenheiro de Software. 
-                                Ele foi meu Professor de Piano, mas, em nossas conversas, identifiquei fortes habilidades em engenharia de software. 
-                                Portanto, ele tem a minha recomendação para trabalhar como Engenheiro de Software ou como Músico para Composição de Jogos.`
+                                `Yago is a focused professional with diverse skills and can contribute to your projects either as a Musician or a Software Engineer. 
+                                He was my Piano Teacher, but through our conversations, I recognized his strong abilities in software engineering. 
+                                Therefore, he has my full recommendation to work as a Software Engineer or as a Musician for Game Composition.`
                             }
-                            position={'Professor de TI - IFAL'}
+                            position={'IT Professor - IFAL'}
+                        />
+                        <Testimonial
+                            avatar={joao}
+                            author={"João Paulo Costa"}
+                            website={"https://www.hidrauteky.com"}
+                            testimonial={
+                                `Responsible professional who delivers on his promises — he built my company’s website exactly the way I had envisioned it!`
+                            }
+                            position={'CEO - Hidrauteky'}
                         />
                     </div>
                 </div>

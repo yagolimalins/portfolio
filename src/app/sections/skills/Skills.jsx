@@ -8,8 +8,8 @@ const Skills = () => {
         <div className={styles.skills}>
             <div className={styles.content}>
                 <Headings
-                    h2={'Tecnologias'}
-                    h3={'Linguagens, frameworks e ferramentas'}
+                    h2={'Tech Stack'}
+                    h3={'Languages, frameworks and tools'}
                 />
                 <div className={styles.icons}>
                     <Skill skill={'JavaScript'} icon={'javascript'} />

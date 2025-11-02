@@ -6,9 +6,11 @@
     align-items: center;
     background-color: $lighter-blue;
     .content {
-        padding: 24px 0px;
+        padding: 36px 0px;
         .textual {
             width: 100%;
+            text-align: center;
+            line-height: 30px;
             .message {
                 color: $grey;
                 font-size: 14px;
