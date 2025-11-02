@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './Footer.module.scss'
 
 const Footer = () => {
@@ -5,7 +6,9 @@ const Footer = () => {
         <footer className={styles.footer}>
             <div className={styles.content}>
                 <div className={styles.textual}>
-                    <p className={styles.message}>Powered by React.js and Next.js | Developed with ❤️ by Yago Lins </p>
+                    <p className={styles.message}>
+                        Powered by <a href="https://react.dev" target='_blank'>React.js</a> and <a href="https://nextjs.org/" target='_blank'>Next.js</a> | 
+                        Developed with ❤️ by Yago Lins </p>
                 </div>
 
             </div>

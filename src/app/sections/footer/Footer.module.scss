@@ -5,17 +5,31 @@
     flex-direction: column;
     align-items: center;
     background-color: $lighter-blue;
+
     .content {
         padding: 36px 0px;
+
         .textual {
             width: 100%;
             text-align: center;
             line-height: 30px;
+
             .message {
+                a {
+                    color: #007bff;
+                    /* your desired link color */
+                    text-decoration: none;
+                }
+
+                a:visited {
+                    color: #007bff;
+                    /* same color as normal link */
+                }
+
                 color: $grey;
                 font-size: 14px;
             }
         }
     }
-    
+
 }

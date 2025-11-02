@@ -7,12 +7,12 @@ import 'styles/globals.scss';
 
 export const metadata = {
   title: 'Yago Lins - Dev',
-  description: 'Portfólio de Yago Lins',
+  description: 'Portfolio of Yago Lins',
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-BR">
+    <html lang="en-US">
       <body className='app'>
         {children}
         <Analytics />
