@@ -47,7 +47,7 @@ const Header = () => {
                         <Link onClick={toggleMenu} className={styles.link} href={"#contacts"}>Contact</Link>
                     </li>
                 </ul>
-                <a className={styles.curriculum} onClick={toggleMenu} href='documents/Yago Lima Lins - Desenvolvedor Full-Stack.pdf' target='_blank'>
+                <a className={styles.curriculum} onClick={toggleMenu} href='documents/Yago Lima Lins - Fullstack Developer.pdf' target='_blank'>
                     <button className={styles.button}>
                         Download CV
                     </button>
