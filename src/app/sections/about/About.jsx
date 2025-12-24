@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./About.module.scss";
 import Headings from "components/headings/Headings";
-import photo from "assets/images/photos/photo.jpg";
+import photo from "assets/images/photos/photo-2.jpg";
 
 const About = () => {
   return (

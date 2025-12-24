@@ -21,7 +21,7 @@
                     flex-shrink: 0;
                     flex-grow: 0;
                     width: 400px;
-                    height: auto;
+                    height: 100%;
                     margin-left: 32px;
                     border-left: 8px solid;
                     border-bottom: 8px solid;
@@ -38,7 +38,6 @@
                 @media (max-width: 768px) {
                     .photo {
                         width: 280px;
-                        height: 385px;
                     }
                 }
 
