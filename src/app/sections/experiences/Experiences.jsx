@@ -11,7 +11,7 @@ const Experiences = () => {
 
           <Experience
             logo={"fiea"}
-            job={"Software Developer"}
+            job={"Full Stack Developer"}
             tasks={[
               "Provided Level 2 (N2) support for BPMS systems (Orquestra/Zeev)",
               "Developed frontend features with React, TypeScript, JavaScript, and jQuery",
