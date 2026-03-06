@@ -21,12 +21,12 @@ const About = () => {
                 experience in backend and frontend development. I currently work
                 as a Software Developer at FIEA (Federation of Industries of the
                 State of Alagoas) and as a self-employed fullstack developer,
-                with my current professional focus centered on Java and Spring
-                Boot for backend development.
+                with my current professional focus centered on C# and .NET for
+                backend development.
                 <br />
                 <br />
-                I have hands-on experience building RESTful APIs using Java
-                (Spring Boot), as well as working with Node.js and Express. On
+                I have hands-on experience building RESTful APIs using C#
+                (.NET), as well as working with Node.js and Express. On
                 the front end, I develop modern web interfaces with React +
                 Next.js and Vue + Nuxt.js. For data persistence, I work with
                 relational databases such as PostgreSQL and SQL Server, and
