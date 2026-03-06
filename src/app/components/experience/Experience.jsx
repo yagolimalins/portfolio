@@ -1,16 +1,17 @@
 import Image from 'next/image';
 import styles from './Experience.module.scss';
 
-const Experience = ({ logo, job, tasks, date }) => {
+const Experience = ({ logo, site, job, tasks, date }) => {
   return (
     <div className={styles.experience}>
-      <Image
-        className={styles.logo}
-        src={`/logos/${logo}.svg`}
-        width={107}
-        height={40}
-        alt={`Logo da ${logo}`}
-      />
+      <a className={styles.logo} href={site} target='_blank'>
+        <Image
+          src={`/logos/${logo}`}
+          width={100}
+          height={100}
+          alt={`Logo da ${logo}`}
+        />
+      </a>
 
       <div className={styles.description}>
         <strong className={styles.job}>{job}</strong>
