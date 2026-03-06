@@ -4,7 +4,7 @@ import styles from './Experience.module.scss';
 const Experience = ({ logo, site, job, tasks, date }) => {
   return (
     <div className={styles.experience}>
-      <a className={styles.logo} href={site} target='_blank'>
+      <a className={styles.logo} href={site} target="_blank">
         <Image
           src={`/logos/${logo}`}
           width={100}

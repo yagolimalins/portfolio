@@ -3,6 +3,7 @@ import styles from './Works.module.scss';
 import Headings from 'components/headings/Headings';
 import senai from 'assets/images/works/senai.png';
 import hidrauteky from 'assets/images/works/hidrauteky.png';
+import tugonn from 'assets/images/works/tugonn.png';
 
 const Works = () => {
   return (
@@ -23,6 +24,23 @@ const Works = () => {
               'Node.js',
               'JavaScript',
               'Tailwind CSS',
+            ]}
+          />
+          <Work
+            href={'https://www.tugonn.com'}
+            image={tugonn}
+            title={'TugOnn'}
+            description={`Social networking platform designed to connect people and strengthen local communities through collaboration and shared initiatives. The project focuses on encouraging meaningful interactions, community engagement, and the organization of positive local activities, demonstrating the development of a web application centered on social interaction and user experience.`}
+            tags={[
+              'React.js',
+              'Next.js',
+              'Node.js',
+              'Express.js',
+              'JavaScript',
+              'TypeScript',
+              'Tailwind CSS',
+              'MongoDB',
+              'Swagger',
             ]}
           />
           <Work
