@@ -1,50 +1,48 @@
 @use 'variables' as *;
 
 .skills {
-    background-color: $darker-blue;
+  background-color: $darker-blue;
 
-    .content {
-        padding: 96px 0px 96px 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 48px;
-        width: 100%;
+  .content {
+    padding: 96px 0px 96px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    width: 100%;
 
-        font-family: $font-family;
-        color: white;
+    font-family: $font-family;
+    color: white;
 
-        .textual {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            height: 72px;
-        }
+    .textual {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
 
-        .icons {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            width: 100%;
-            justify-items: center;
-            justify-content: center;
-            row-gap: 48px;
-        }
-
-        @media (max-width: 768px) {
-            .icons {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
+    .icons {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      width: 100%;
+      justify-items: center;
+      justify-content: center;
+      row-gap: 48px;
     }
 
     @media (max-width: 768px) {
-        .content {
-            display: flex;
-            flex-direction: column;
-            padding: 64px 0px;
-        }
+      .icons {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
+  }
 
+  @media (max-width: 768px) {
+    .content {
+      display: flex;
+      flex-direction: column;
+      padding: 64px 0px;
+    }
+  }
 }

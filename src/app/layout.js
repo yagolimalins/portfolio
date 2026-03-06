@@ -8,16 +8,16 @@ import 'styles/globals.scss';
 export const metadata = {
   title: 'Yago Lins - Dev',
   description: 'Portfolio of Yago Lins',
-}
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en-US">
-      <body className='app'>
+      <body className="app">
         {children}
         <Analytics />
         <SpeedInsights />
       </body>
     </html>
-  )
+  );
 }

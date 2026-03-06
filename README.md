@@ -6,33 +6,33 @@ This repository contains my personal developer portfolio, built with React and N
 
 ## 🧠 Tech Stack
 
-- React 19  
-- Next.js 15  
-- Sass (SCSS) for modular and maintainable styling  
-- React Toastify for user feedback and notifications  
-- Vercel Analytics for usage tracking  
-- Vercel Speed Insights for performance monitoring  
+- React 19
+- Next.js 15
+- Sass (SCSS) for modular and maintainable styling
+- React Toastify for user feedback and notifications
+- Vercel Analytics for usage tracking
+- Vercel Speed Insights for performance monitoring
 
 ---
 
 ## 🎯 Technical Focus
 
-- Scalable and well-structured component architecture  
-- Clear separation between layout, sections, and reusable components  
-- Responsive and accessible user interfaces  
-- Performance-oriented development using Next.js features  
-- Maintainable styling with SCSS modules and global styles  
-- Production-ready setup with analytics and performance insights  
+- Scalable and well-structured component architecture
+- Clear separation between layout, sections, and reusable components
+- Responsive and accessible user interfaces
+- Performance-oriented development using Next.js features
+- Maintainable styling with SCSS modules and global styles
+- Production-ready setup with analytics and performance insights
 
 ---
 
 ## ✨ Features
 
-- Presentation of projects and professional experience  
-- Responsive layout across different devices  
-- Reusable UI components  
-- Client-side interactions with clear user feedback  
-- Performance and usage monitoring via Vercel  
+- Presentation of projects and professional experience
+- Responsive layout across different devices
+- Reusable UI components
+- Client-side interactions with clear user feedback
+- Performance and usage monitoring via Vercel
 
 ---
 
@@ -62,10 +62,10 @@ Open your browser at:
 
 ## 🛠️ Available Scripts
 
-- npm run dev — starts the development server  
-- npm run build — creates an optimized production build  
-- npm run start — runs the production server  
-- npm run lint — runs Next.js linting  
+- npm run dev — starts the development server
+- npm run build — creates an optimized production build
+- npm run start — runs the production server
+- npm run lint — runs Next.js linting
 
 ---
 
@@ -123,8 +123,8 @@ This project is intended for personal and professional showcase purposes. Feel f
 
 ## 👋 Contact
 
-- GitHub: https://github.com/yagolimalins  
-- LinkedIn: https://www.linkedin.com/in/yago-lima-lins  
+- GitHub: https://github.com/yagolimalins
+- LinkedIn: https://www.linkedin.com/in/yago-lima-lins
 - Live Portfolio: https://www.yagolins.dev
 
 ---

@@ -1,95 +1,92 @@
 @use 'variables' as *;
 
 .work {
+  display: flex;
+  width: 100%;
+
+  .image {
+    border-radius: 12px 0px 0px 12px;
+    width: 50%;
+    background-color: $card-light;
+
+    .link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      filter: drop-shadow(1px 1px 2px black);
+
+      .page {
+        margin: 48px 0px;
+        width: 75%;
+        height: auto;
+        border-radius: 12px;
+      }
+    }
+  }
+
+  .info {
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    border-radius: 0px 12px 12px 0px;
+    width: 50%;
+    background-color: $card-dark;
+    padding: 48px 0px;
 
-    .image {
-        border-radius: 12px 0px 0px 12px;
-        width: 50%;
-        background-color: $card-light;
+    .textual {
+      display: flex;
+      flex-direction: column;
+      padding: 0px 48px;
+      gap: 28px;
 
-        .link {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            filter: drop-shadow(1px 1px 2px black);
+      .title {
+        color: $white;
+        font-size: 20px;
+        font-weight: 600;
+        filter: drop-shadow(2px 2px 2px black);
+      }
 
+      .description {
+        color: $grey;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+      }
 
-            .page {
-                margin: 48px 0px;
-                width: 75%;
-                height: auto;
-                border-radius: 12px;
-            }
-        }
-    }
-
-    .info {
+      .tags {
         display: flex;
-        flex-direction: column;
-        border-radius: 0px 12px 12px 0px;
-        width: 50%;
-        background-color: $card-dark;
-        padding: 48px 0px;
-
-        .textual {
-            display: flex;
-            flex-direction: column;
-            padding: 0px 48px;
-            gap: 28px;
-
-            .title {
-                color: $white;
-                font-size: 20px;
-                font-weight: 600;
-                filter: drop-shadow(2px 2px 2px black);
-            }
-
-            .description {
-                color: $grey;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 24px;
-            }
-
-            .tags {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 8px;
-                filter: drop-shadow(1px 1px 1px black);
-            }
-        }
+        flex-wrap: wrap;
+        gap: 8px;
+        filter: drop-shadow(1px 1px 1px black);
+      }
     }
+  }
 }
 
 @media (max-width: 768px) {
-    
-    .work {
+  .work {
+    flex-direction: column;
+
+    .image {
+      width: 100%;
+      border-radius: 12px 12px 0px 0px;
+
+      .link {
+        display: flex;
         flex-direction: column;
+        align-items: center;
 
-        .image {
-            width: 100%;
-            border-radius: 12px 12px 0px 0px;
-
-            .link {
-                
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                
-                .page {
-                    margin: 32px;
-                    height: 279px;
-                    width: auto;
-                }
-            }
+        .page {
+          margin: 32px;
+          height: 279px;
+          width: auto;
         }
-
-        .info {
-            padding: 32px 0px;
-            width: 100%;
-            border-radius: 0px 0px 12px 12px;
-        }
+      }
     }
+
+    .info {
+      padding: 32px 0px;
+      width: 100%;
+      border-radius: 0px 0px 12px 12px;
+    }
+  }
 }

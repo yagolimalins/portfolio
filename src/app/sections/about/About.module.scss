@@ -1,85 +1,85 @@
 @use 'variables' as *;
 
 .about {
-    background-color: $lighter-blue;
+  background-color: $lighter-blue;
 
-    .content {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 84px 96px 84px;
+
+    .textual {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+
+      .bio {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 96px 84px 96px 84px;
 
-        .textual {
-            display: flex;
-            flex-direction: column;
-            gap: 48px;
-
-            .bio {
-                display: flex;
-
-                .photo {
-                    flex-shrink: 0;
-                    flex-grow: 0;
-                    width: 400px;
-                    height: 100%;
-                    margin-left: 32px;
-                    border-left: 8px solid;
-                    border-bottom: 8px solid;
-                    border-color: $lighter-blue;
-                    filter: drop-shadow(-16px 16px 0px $darker-grey);
-                }
-
-                @media (max-width: 1200px) {
-                    .photo {
-                        margin: auto;
-                    }
-                }
-
-                @media (max-width: 768px) {
-                    .photo {
-                        width: 280px;
-                    }
-                }
-
-                .depict {
-                    flex-grow: 1;
-                    color: $grey;
-                    font-size: 16px;
-                    font-weight: 400;
-                    line-height: 24px;
-                    text-align: justify;
-                    margin-left: 84px;
-                    
-                    .catchphrase {
-                        text-decoration: underline;
-                        font-weight: 400;
-                    }
-                }
-            }
-
-            @media (max-width: 1200px) {
-                .bio {
-                    gap: 48px;
-                    flex-direction: column;
-                    align-items: center;
-
-                    .depict {
-                        margin: 0px;
-                    }
-                }
-            }
+        .photo {
+          flex-shrink: 0;
+          flex-grow: 0;
+          width: 400px;
+          height: 100%;
+          margin-left: 32px;
+          border-left: 8px solid;
+          border-bottom: 8px solid;
+          border-color: $lighter-blue;
+          filter: drop-shadow(-16px 16px 0px $darker-grey);
         }
-    }
 
-    @media (max-width: 1200px) {
-        .content {
-            padding: 64px 32px 64px 32px;
+        @media (max-width: 1200px) {
+          .photo {
+            margin: auto;
+          }
         }
-    }
 
-    @media (max-width: 768px) {
-        .content {
-            padding: 64px 16px 64px 16px;
+        @media (max-width: 768px) {
+          .photo {
+            width: 280px;
+          }
         }
+
+        .depict {
+          flex-grow: 1;
+          color: $grey;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: justify;
+          margin-left: 84px;
+
+          .catchphrase {
+            text-decoration: underline;
+            font-weight: 400;
+          }
+        }
+      }
+
+      @media (max-width: 1200px) {
+        .bio {
+          gap: 48px;
+          flex-direction: column;
+          align-items: center;
+
+          .depict {
+            margin: 0px;
+          }
+        }
+      }
     }
+  }
+
+  @media (max-width: 1200px) {
+    .content {
+      padding: 64px 32px 64px 32px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      padding: 64px 16px 64px 16px;
+    }
+  }
 }

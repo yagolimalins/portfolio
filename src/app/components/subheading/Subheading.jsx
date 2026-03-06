@@ -1,11 +1,7 @@
-import styles from './Subheading.module.scss'
+import styles from './Subheading.module.scss';
 
-const Subheading = ({text}) => {
-    return (
-        <h3 className={styles.subheading}>
-            {text}
-        </h3>
-    )
-}
+const Subheading = ({ text }) => {
+  return <h3 className={styles.subheading}>{text}</h3>;
+};
 
-export default Subheading
+export default Subheading;

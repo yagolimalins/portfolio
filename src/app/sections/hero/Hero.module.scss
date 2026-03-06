@@ -1,84 +1,80 @@
 @use 'variables' as *;
 
 .hero {
+  display: flex;
+  background-color: $darker-blue;
+
+  .content {
     display: flex;
-    background-color: $darker-blue;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 96px 16px 96px 0px;
 
+    .textual {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      color: $white;
+      font-family: $font-family;
+      overflow: hidden;
+
+      .greeting {
+        font-size: 50px;
+        font-weight: 700;
+      }
+
+      .intro {
+        color: $grey;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: justify;
+        margin-right: 3%;
+      }
+
+      .status {
+        color: $grey;
+        line-height: 30px;
+      }
+    }
+
+    .photo {
+      border-right: 8px solid;
+      border-bottom: 8px solid;
+      border-color: $darker-blue;
+      filter: drop-shadow(16px 16px 0px $darker-grey);
+    }
+  }
+
+  @media (max-width: 1280px) {
     .content {
-        display: flex;
-        justify-content: space-between;
-        gap: 60px;
-        padding: 96px 16px 96px 0px;
-
-
-        .textual {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-            color: $white;
-            font-family: $font-family;
-            overflow: hidden;
-
-            .greeting {
-                font-size: 50px;
-                font-weight: 700;
-            }
-
-            .intro {
-                color: $grey;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 24px;
-                text-align: justify;
-                margin-right: 3%;
-            }
-
-            .status {
-                color: $grey;
-                line-height: 30px;
-            }
-        }
-
-        .photo {
-            border-right: 8px solid;
-            border-bottom: 8px solid;
-            border-color: $darker-blue;
-            filter: drop-shadow(16px 16px 0px $darker-grey);
-
-        }
+      padding: 96px 32px 96px 16px;
     }
+  }
 
-    @media (max-width: 1280px) {
-        .content {
-            padding: 96px 32px 96px 16px;
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column-reverse;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 800px;
+      padding: 0px 16px 28px 16px;
+
+      .textual {
+        .greeting {
+          font-size: 36px;
         }
-    }
 
-    @media (max-width: 768px) {
-        .content {
-            flex-direction: column-reverse;
-            justify-content: space-evenly;
-            align-items: center;
-            height: 800px;
-            padding: 0px 16px 28px 16px;
-
-            .textual {
-
-                .greeting {
-                    font-size: 36px;
-                }
-
-                .intro {
-                    margin: 0px;
-                }
-            }
+        .intro {
+          margin: 0px;
         }
+      }
     }
-
+  }
 }
 
 @media (max-width: 768px) {
-    .hero {
-        top: 110px;
-    }
+  .hero {
+    top: 110px;
+  }
 }

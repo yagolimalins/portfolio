@@ -1,11 +1,11 @@
 @use 'variables' as *;
 
 .heading {
-    color: $grey;
-    font-size: 18px;
-    display: inline-block;
-    border-radius: 12px;
-    padding: 4px 20px;
-    background-color: $darker-grey;
-    filter: drop-shadow(2px 2px 2px black);
+  color: $grey;
+  font-size: 18px;
+  display: inline-block;
+  border-radius: 12px;
+  padding: 4px 20px;
+  background-color: $darker-grey;
+  filter: drop-shadow(2px 2px 2px black);
 }

@@ -1,115 +1,112 @@
 @use 'variables' as *;
 
 .header {
-    background-color: $darker-blue;
+  background-color: $darker-blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  max-width: 1400px;
+  width: 100%;
+  z-index: 10;
+  border-bottom: 2px solid $card-light;
+
+  .top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    position: fixed;
-    max-width: 1400px;
+    background-color: $darker-blue;
+    height: 70px;
     width: 100%;
-    z-index: 10;
-    border-bottom: 2px solid $card-light;
 
-    .top {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: $darker-blue;
-        height: 70px;
-        width: 100%;
+    .hamburger {
+      display: none;
+      padding-right: 12px;
+    }
+  }
 
-        .hamburger {
-            display: none;
-            padding-right: 12px;
-        }
+  .nav {
+    display: flex;
+    gap: 34px;
+    padding-right: 12px;
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 34px;
+
+      .link {
+        color: $grey;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+      }
     }
 
-    .nav {
-        display: flex;
-        gap: 34px;
-        padding-right: 12px;
-
-        .links {
-            display: flex;
-            align-items: center;
-            gap: 34px;
-
-            .link {
-                color: $grey;
-                font-size: 16px;
-                font-weight: 500;
-                text-decoration: none;
-            }
-
-
-        }
-
-        .curriculum {
-            .button {
-                font-family: $font-family;
-                color: $lighter-blue;
-                font-size: 16px;
-                font-weight: 500;
-                height: 36px;
-                width: 136px;
-                border-radius: 12px;
-                background-color: $white;
-                cursor: pointer;
-            }
-        }
+    .curriculum {
+      .button {
+        font-family: $font-family;
+        color: $lighter-blue;
+        font-size: 16px;
+        font-weight: 500;
+        height: 36px;
+        width: 136px;
+        border-radius: 12px;
+        background-color: $white;
+        cursor: pointer;
+      }
     }
-
+  }
 }
 
 @media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: rgba($darker-blue, 0.98);
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba($darker-blue, 0.98);
 
-        .top {
-            display: flex;
-            border-bottom: 2px solid $card-light;
+    .top {
+      display: flex;
+      border-bottom: 2px solid $card-light;
 
-            .hamburger {
-                display: inline-block;
-            }
-        }
-
-        .nav {
-            display: flex;
-            flex-direction: column;
-            gap: 0px;
-            width: 100%;
-            padding-bottom: 18px;
-
-            .links {
-                padding: 32px 0px;
-                display: flex;
-                flex-direction: column;
-                gap: 32px;
-                align-items: center;
-
-                .link {
-                    font-size: 18px;
-                }
-            }
-
-            .curriculum {
-                text-decoration: none;
-                display: flex;
-                justify-content: space-around;
-                align-self: center;
-                width: 40%;
-                padding: 0px 16px;
-                margin-bottom: 8px;
-            }
-        }
-
-        .active {
-            display: none;
-        }
+      .hamburger {
+        display: inline-block;
+      }
     }
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+      width: 100%;
+      padding-bottom: 18px;
+
+      .links {
+        padding: 32px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+
+        .link {
+          font-size: 18px;
+        }
+      }
+
+      .curriculum {
+        text-decoration: none;
+        display: flex;
+        justify-content: space-around;
+        align-self: center;
+        width: 40%;
+        padding: 0px 16px;
+        margin-bottom: 8px;
+      }
+    }
+
+    .active {
+      display: none;
+    }
+  }
 }

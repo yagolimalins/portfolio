@@ -1,37 +1,32 @@
 @use 'variables' as *;
 
 .experiences {
-    background-color: $lighter-blue;
+  background-color: $lighter-blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 100%;
+    padding: 96px 0px;
 
+    .textual {
+      display: flex;
+      flex-direction: column;
+      padding: 0px 120px;
+      gap: 48px;
+    }
+  }
+
+  @media (max-width: 900px) {
     .content {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 96px 0px;
+      padding: 64px 0;
 
-        .textual {
-            display: flex;
-            flex-direction: column;
-            padding: 0px 120px;
-            gap: 48px;
-        }
-
-        
-        
+      .textual {
+        padding: 0px 16px;
+      }
     }
-
-    @media (max-width: 900px) {
-        .content {
-            padding: 64px 0;
-
-            .textual {
-                padding: 0px 16px;
-            }
-        }
-    }
-
-
+  }
 }

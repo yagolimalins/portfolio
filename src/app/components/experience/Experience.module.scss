@@ -1,65 +1,63 @@
 @use 'variables' as *;
 
 .experience {
-    display: flex;
-    border-radius: 12px;
-    background-color: $card-dark;
-    padding: 32px;
+  display: flex;
+  border-radius: 12px;
+  background-color: $card-dark;
+  padding: 32px;
+  filter: drop-shadow(2px 2px 2px black);
+
+  .logo {
+    margin-right: 12%;
     filter: drop-shadow(2px 2px 2px black);
+  }
 
-    .logo {
-        margin-right: 12%;
-        filter: drop-shadow(2px 2px 2px black);
+  .description {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .job {
+      font-size: 20px;
+      font-weight: 600;
     }
 
-    .description {
-        color: $white;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
+    .tasks {
+      display: flex;
+      flex-direction: column;
+      list-style: inside;
+      gap: 12px;
 
-        .job {
-            font-size: 20px;
-            font-weight: 600;
-        }
-
-        .tasks {
-            display: flex;
-            flex-direction: column;
-            list-style: inside;
-            gap: 12px;
-
-            .task {
-                color: $grey;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 20px;
-            }
-        }
-    }
-
-    .date {
-        margin-left: auto;
+      .task {
         color: $grey;
         font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+      }
     }
+  }
+
+  .date {
+    margin-left: auto;
+    color: $grey;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 1200px) {
+  .experience {
+    flex-direction: column;
+    gap: 16px;
+    .date {
+      margin-left: 0px;
+    }
+  }
 
-    .experience {
-        flex-direction: column;
-        gap: 16px;
-        .date {
-            margin-left: 0px;
-        }
-    }
-    
-    .experience div:nth-child(2) {
-        order: 3;
-    }
-    .experience div:nth-child(2) {
-        order: 2;
-    }
-
+  .experience div:nth-child(2) {
+    order: 3;
+  }
+  .experience div:nth-child(2) {
+    order: 2;
+  }
 }

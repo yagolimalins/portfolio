@@ -1,14 +1,14 @@
-import Image from "next/image";
-import styles from "./About.module.scss";
-import Headings from "components/headings/Headings";
-import photo from "assets/images/photos/photo-2.jpg";
+import Image from 'next/image';
+import styles from './About.module.scss';
+import Headings from 'components/headings/Headings';
+import photo from 'assets/images/photos/photo-2.jpg';
 
 const About = () => {
   return (
     <div id="about" className={styles.about}>
       <div className={styles.content}>
         <div className={styles.textual}>
-          <Headings h2={"About"} h3={"Let me introduce myself 🤘🏼"} />
+          <Headings h2={'About'} h3={'Let me introduce myself 🤘🏼'} />
           <div className={styles.bio}>
             <Image
               className={styles.photo}
@@ -26,12 +26,12 @@ const About = () => {
                 <br />
                 <br />
                 I have hands-on experience building RESTful APIs using C#
-                (.NET), as well as working with Node.js and Express. On
-                the front end, I develop modern web interfaces with React +
-                Next.js and Vue + Nuxt.js. For data persistence, I work with
-                relational databases such as PostgreSQL and SQL Server, and
-                non-relational databases like MongoDB, always prioritizing
-                scalability, performance, and data integrity.
+                (.NET), as well as working with Node.js and Express. On the
+                front end, I develop modern web interfaces with React + Next.js
+                and Vue + Nuxt.js. For data persistence, I work with relational
+                databases such as PostgreSQL and SQL Server, and non-relational
+                databases like MongoDB, always prioritizing scalability,
+                performance, and data integrity.
                 <br />
                 <br />
                 Alongside my technical journey, I am also a musician and have
