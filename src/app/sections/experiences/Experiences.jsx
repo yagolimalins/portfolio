@@ -39,20 +39,6 @@ const Experiences = () => {
             ]}
             date={'2025 - Present'}
           />
-
-          <Experience
-            logo={'fiea.svg'}
-            site={'https://fiea.com.br/'}
-            job={'Infrastructure Analyst'}
-            tasks={[
-              'Installed and maintained corporate software and hardware',
-              'Managed identity and access using Active Directory and Microsoft 365',
-              'Automated system configuration and administration using PowerShell',
-              'Managed IT asset inventory using TraumaZero',
-              'Provided Level 2 Service Desk support (ITIL)',
-            ]}
-            date={'2024 - 2025'}
-          />
         </div>
       </div>
     </footer>
