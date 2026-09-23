@@ -23,22 +23,6 @@ const Experiences = () => {
             ]}
             date={'2026 - Present'}
           />
-
-          <Experience
-            logo={'fiea.svg'}
-            site={'https://fiea.com.br'}
-            job={'Full Stack Software Engineer'}
-            tasks={[
-              'Provided Level 2 (N2) support for BPMS systems (Orquestra/Zeev)',
-              'Developed frontend features with React, TypeScript, JavaScript, and jQuery',
-              'Built and integrated REST and GraphQL APIs using Node.js and Python',
-              'Managed and optimized SQL Server databases',
-              'Fixed bugs, refactored legacy code, and improved workflows',
-              'Implemented CI/CD pipelines with Jenkins and Docker',
-              'Worked with Scrum and Kanban using Azure DevOps',
-            ]}
-            date={'2025 - Present'}
-          />
         </div>
       </div>
     </footer>
